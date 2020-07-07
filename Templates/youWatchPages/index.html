@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouWatch</title>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<link rel="icon" href="{% static 'images/logo.png' %}">
+
+</head>
+<body >
+<div class="contaner">
+    <!-- header -->
+    <div class="header">
+        <nav>
+            <ul>
+                <img class="icon" src="{% static 'images/hom-icon.png' %}" alt="" width="50px" style="margin-right: 0px;">
+                <li><a class='show' href="http://127.0.0.1:8000">Home</a></li>
+                <img class="icon" src="{% static 'images/trending.png' %}" alt="" width="39px" style="margin-top: 28px; opacity:0.95;margin-left:0px;">
+                <li><a class="show"  href="">Tranding</a></li>
+                <img class="icon" src="{% static 'images/account-icon.png' %}" alt="" width="27px" style="margin-top: 33px; ">
+                <li><a class="show" href="">Account</a></li>
+                <img class="search" src="{% static 'images/search-icon.png' %}" alt="" width="30px" style="margin-top: 32px; margin-right:10px;">
+                <input class='searchin' type="search" name="" id="" >
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="#"><img src="{% static 'images/logo.png' %}" alt="YouWatchLogo"></a>
+        </div>
+    </div>
+
+   {% block content %}
+    
+   {% endblock content %}
+    <!-- footer -->
+
+
+</div>
+
+<div class="footer">
+    <div class="footerItem">
+        <input type="text" placeholder="Enter Your question here">
+
+        <h3 >copy right reserved to Ahmad|Wisam</h3>
+    </div>
+</div>
+
+
+
+<script src="{% static 'scripts/jquery.min.js' %}"></script>
+<script src="{% static 'scripts/script.js' %}"></script>
+</body>
+</html>

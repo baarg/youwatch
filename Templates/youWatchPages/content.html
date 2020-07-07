@@ -1,0 +1,78 @@
+{% extends 'youWatchPages/index.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+ <!-- contant -->
+    <div class="contant">
+        {% for i in rand %}
+        {% if i == 1 %}
+        <div class="bar">
+            <div class="con">
+                <div id="d" class="maincon"><h3>SpiderMan</h3></div>
+                <div ><img class="footercon" src="{% static 'images/spider.jpg' %}" alt=""></div>
+                <div class="shadow">Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko. </div>
+            </div>
+            <div class="con">
+                <div class="maincon"><h3>The lord of the rings</h3></div>
+                <div ><a id="play"class="watch" href="movies/The lord of the rings/P1/P1.html"><img class="footercon" src="{% static 'images/lord.jpg' %}" alt=""></a></div>
+                <div class="shadow"></div>
+            </div>
+            <div class="con">
+                <div class="maincon"><h3>the hobbit</h3></div>
+                <div ><a href="movies/the hobbit/P1/P1.html"><img  class="footercon" src="{% static 'images/hobbit.jpg' %}" alt=""></a></div>
+                <div class="shadow"></div>
+             
+            </div>
+        </div>
+        {% endif %}
+        {% if i == 3 %}
+            <div class="bar">
+                <div class="con">
+                    <div class="maincon"><h3>the Ring</h3></div>
+                    <div ><a onclick="play()"href="player.html"><img class="footercon" src="{% static 'images/the ring.jpeg' %}" alt=""></a></div>
+                    <div class="shadow"></div>
+                </div>
+                <div class="con">
+                    <div class="maincon"><h3>pirates of the caribbean</h3></div>
+                    <div ><a href="/movies/pirates of the caribbean/P1/P1.html"><img class="footercon" src="{% static 'images/pirates.jpeg' %}" alt=""></a></div>
+                    <div class="shadow"></div>
+        
+                </div>
+                <div class="con">
+                    <div class="maincon"><h3>game of thrones</h3></div>
+                    <div ><img class="footercon" src="{% static 'images/got.jpg' %}" alt=""></div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+            {% endif %}
+            {% if i == 2 %}
+                <!-- bar -->
+                <div class="bar">
+                    <div class="con">
+                        <div class="maincon"><h3>Dark</h3></div>
+                        <div ><a href="series/Dark/S1/dark.html"><img class="footercon" src="{% static 'images/dark.jpg' %}" alt=""></a></div>
+                        <div class="shadow">
+                            <h4><a href="dark.html">witch</a></h4>
+                        </div>
+            
+                    </div>
+                    <div class="con">
+                        <div class="maincon"><h3>the martian</h3></div>
+                        <div class="footercon"><a href="series/Dark/S1/dark.html"><img class="footercon" src="{% static 'images/martain.jpg' %}" alt=""></a></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="con">
+                        <div class="maincon"><h3>MR.robot</h3></div>
+                        <div class="footercon"><a href="series/Dark/S1/dark.html"><img class="footercon" src="{% static 'images/mr-robot.jpg' %}" alt=""></a></div>
+                        <div class="shadow"></div>
+                    </div> 
+                    
+                </div>
+                {% endif %}
+                {% endfor %}
+    </div>
+    
+  
+
+{% endblock content %}
