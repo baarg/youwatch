@@ -7,8 +7,10 @@ certifi==2020.6.20
 chardet==3.0.4
 colorama==0.4.3
 distlib==0.3.1
+dj-database-url==0.5.0
 Django==3.1b1
 django-filter==2.3.0
+django-heroku==0.3.1
 django-storages==1.9.1
 docutils==0.16
 filelock==3.0.12
@@ -21,8 +23,10 @@ mysql-connector==2.2.9
 packaging==20.4
 Pillow==7.2.0
 pipenv==2020.6.2
+psycopg2==2.8.5
 Pygments==2.6.1
 pyparsing==2.4.7
+python-decouple==3.3
 python-nmap==0.6.1
 python3-nmap==1.4.7
 pytz==2020.1
